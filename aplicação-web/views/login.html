@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tremOFF</title>
+</head>
+<body>
+    <div class="vertical-center">
+      <div class="container containerLogin ">
+        <h3 class="text-center pt-5">LOGIN</h3>
+        <form class="mx-sm-5 mt-5" id="login" action="/login" method="post">
+          <div class="mb-3">
+            <label for="ID1" class="form-label">Login</label>
+            <input type="text" class="form-control" id="ID1" name="ID1" required>
+            
+          </div>
+          <label for="Password1" class="form-label">Senha</label>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" name="Password1" id="Password1" aria-describedby="Password1Button" required>
+                <button class="btn" type="button" id="Password1Button" onclick="showPassword('Password1','imgSenhaLog')"><img id="imgSenhaLog" src="assets/src/eye-fill.svg"></button>
+              </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Lembrar conta</label>
+          </div>
+          <div class="align-items-center justify-content-center d-flex btnSubmit">
+            <button type="submit" class="btn btn-lg " id="loginButton" >Entrar</button>
+          </div>
+          
+        </form>
+        <div class="text-center pt-5 pb-4 forgotPassword">
+        </div>
+      </div>
+  </div>
+</body>
+</html>
