@@ -1,0 +1,109 @@
+.btnSubmit button{
+    background: #FBB78A;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #224A42;
+}
+
+.btnSubmit button:hover{
+    background: #f88d46 !important;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: aliceblue;
+   
+}
+
+.vertical-center {
+    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
+
+.containerLogin{
+    background: #3a465c;
+    border-radius: 15px;
+    color: white;
+    display: absolute;
+    /* margin-top: 100px; */
+    place-content: center;
+    align-self: center;
+}
+
+.containerLogin form .form-check-input{
+    /* background-color: #f88d46; */
+    border-color: black;
+}
+
+.containerLogin form .form-check-input:checked {
+    background-color: #f88d46;
+    border-color: black;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px !important;
+    }
+}
+
+
+
+.forgotPassword a{
+    color: #FBB78A;
+}
+
+.forgotPassword a:hover{
+    color: #f88d46;
+}
+
+
+.containerCadastro{
+    background: #30728C;
+    color: white;
+    display: absolute;
+    /* margin-top: 100px; */
+    place-content: center;
+    align-self: center;
+}
+
+.modal-cad{
+    background: #8BC3D9;
+    
+}
+
+.modal-header{
+    border-bottom: #000000 !important;
+}
+
+
+.modal-footer{
+    background: #8BC3D9 !important;
+    border-top: 0px solid #000000 !important;
+
+}
+
+.btnSubmitCad {
+    background: #FBB78A !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important; 
+    color: #224A42 !important;
+}
+
+.btnSubmitCad:hover{
+    background: #f88d46 !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+    color: aliceblue !important;
+   
+}
+
+#registerAlunoLabel{
+    color: #224A42;
+}
+
+#Password2Button ,#Password2Button:hover, #Password1Button, #Password1Button:hover, #Password3Button, #Password3Button:hover{ 
+    background: rgb(228, 227, 227);
+    color: #000000;     
+}

@@ -1,0 +1,30 @@
+.footer{
+    background-color: #8BC3D9;
+}
+
+.navbar{
+    background-color: #8BC3D9 !important;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar .nav-item .nav-link{
+    color: #224A42;
+}
+
+.navbar-profile .dropdown-item{
+    color: #224A42;
+}
+
+.navbar-profile .dropdown-divider{
+    background-color: white !important;
+}
+
+.navbar-profile .dropdown-menu{
+    background-color: #8BC3D9;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    
+
+} 
+

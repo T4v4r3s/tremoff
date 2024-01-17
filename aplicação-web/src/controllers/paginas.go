@@ -24,6 +24,8 @@ func CarregarPaginaPrincipal(w http.ResponseWriter, r *http.Request) {
 
 	nome, erro := middlewares.PegarNomePorIp(r.Host)
 	if erro != nil {
+		print(erro)
+		print("Erro ao pegar nome")
 		http.Redirect(w, r, "/login", http.StatusMovedPermanently)
 		return
 	}
