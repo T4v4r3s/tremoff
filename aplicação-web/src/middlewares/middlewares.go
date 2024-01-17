@@ -44,6 +44,9 @@ func Autenticar(proximaFuncao http.HandlerFunc) http.HandlerFunc {
 }
 
 func IpExiste(ip string) bool {
+	// Divide o IP na ":" e pega a primeira parte (o IP sem a porta)
+	ip = strings.Split(ip, ":")[0]
+
 	file, err := os.Open("/var/www/html/teste/ip.txt")
 	if err != nil {
 		log.Fatal(err)
@@ -65,6 +68,10 @@ func IpExiste(ip string) bool {
 }
 
 func PegarNomePorIp(ip string) (string, error) {
+
+	// Divide o IP na ":" e pega a primeira parte (o IP sem a porta)
+	ip = strings.Split(ip, ":")[0]
+
 	file, err := os.Open("/var/www/html/teste/ip.txt")
 	if err != nil {
 		return "", err
